@@ -173,3 +173,8 @@ hr{
     box-shadow: 5px 5px 3px 3px whitesmoke  ;
     
 }
+
+.copyright-footer{
+    margin-top: 5%;
+    font-weight: bold;
+}
