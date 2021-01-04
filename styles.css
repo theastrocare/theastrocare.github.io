@@ -29,7 +29,8 @@ body{
     padding-top: 150px;
     padding-left: 5%;
     padding-right: 5%;
-    height: 800px;
+    padding-bottom: 5%;
+    
     /* gradient for background */
 
     background: #C33764;  /* fallback for old browsers */
@@ -47,23 +48,34 @@ body{
 #title p{
 
     text-align: left;
+    margin-bottom: 15%;
 }
 
 .title-img{
+    
+    padding-bottom: 5%;
     text-align: center;
     width: 500px;
     animation: rotation 35s infinite linear;
     position: relative;
-    left: 50px;
+    left: 10%; 
+   
 }
+
+
 
 
 @media (max-width: 600px){
 
     .title-img{
-        width: 300px;
+        width: 200px;
+       
     }
 }
+
+
+
+
 
 /* Rotate image animation keyframe */
 
@@ -94,7 +106,8 @@ body{
 /* Features section styling */
 
 #features{
-    padding-top: 5%;
+    margin-top: 5%;
+  
     padding-left: 3%;
     padding-right: 3%;
     padding-bottom: 5%;
