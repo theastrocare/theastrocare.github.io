@@ -2,11 +2,14 @@
     font-weight: bolder;
    
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0px;
     padding: 0px;
-    scroll-behavior: smooth;
+    
 }
 
 /* custom nabar css over bootstrap */
@@ -152,29 +155,149 @@ hr{
 }
 
 #contact-us{
-    color: aliceblue;
+    
     padding-top: 3%;
     padding-bottom: 5%;
-    text-align: center;
-    background: #C33764;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
+     background: #C33764;  
+     background: -webkit-linear-gradient(to right, #1D2671, #C33764); 
+    background: linear-gradient(to right, #1D2671, #C33764); 
+}
+
+#contact-us h1, #contact-us p{
+    color: aliceblue;
+    text-align: center;
+
 }
 
 .contact-us-form{
+    position: relative;
+    padding: 2%;
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
     height: 400px;
-    width: 300px;
+    width: 500px;
     background-color: aliceblue;
     border-radius: 15px;
-    box-shadow: 5px 5px 3px 3px whitesmoke  ;
+    transition: 1s;
+    
     
 }
+
+
+/* Hover effect only on big screens */
+
+@media (min-width: 700px){
+
+.contact-us-form:hover{
+    height: 600px;
+    width: 700px;
+    
+    
+}
+}
+
+
+.custom-form{
+    position: relative;
+    text-align: center;
+}
+
+.contact-us-form label{
+    font-weight: bolder;
+    font-size: 20px;
+} 
 
 .copyright-footer{
     margin-top: 5%;
     font-weight: bold;
+}
+
+.form-row{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+/* custom button styling */
+
+.custom-button{
+    position: relative;
+
+ margin-top: 10%;
+    
+    width: 50%;
+    border-radius: 30px;
+    height: 60%;
+    background-color: #C33764;
+    font-weight: bolder;
+    color: aliceblue;
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    z-index: 1;   
+}
+
+.custom-button::before{
+    border-radius: 30px;
+    position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to left, #1D2671, #C33764);
+  z-index: -1;
+  transition: opacity .5s linear;
+  opacity: 0;
+}
+
+.custom-button:hover::before {
+    opacity: 1;
+  }
+
+
+
+
+
+
+
+/* Form styling for mobile devices */
+@media (max-width: 600px){
+    .form-control{
+
+        width: 60%;
+    }
+
+    .custom-form{
+        
+        text-align: left;
+    }
+
+    .custom-button{
+        
+        position: relative;
+    
+     margin-top: 2%;
+        height: 130%;
+        width: 90%;
+    }
+
+    .contact-us-form{
+
+        width: 300px;
+    }
+
+    .form-row{
+        margin-left: 5%;
+    }
+
+    .form-control{
+        width: 85%;
+    }
+
+    
+
+    
+    
 }
