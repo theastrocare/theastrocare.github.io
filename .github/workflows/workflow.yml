@@ -3,10 +3,10 @@ name: S3 Sync
 on:
   push:
     branches:
-    - infragit
+    - main
   pull_request:
     branches:
-    - infragit
+    - main
 
 jobs:
   deploy:
