@@ -1,6 +1,6 @@
 .nav-br{
     font-weight: bolder;
-   
+
 }
 
 body{
@@ -13,13 +13,13 @@ body{
 .navbar{
 
     padding-left: 50px;
-  
+
     color: aliceblue;
 
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+
 }
 
 
@@ -30,13 +30,13 @@ body{
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
-    
+
     /* gradient for background */
 
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+
 }
 
 #title {
@@ -50,16 +50,20 @@ body{
     text-align: left;
     margin-bottom: 15%;
 }
+.ana{
+  text-align: left;
+  margin-bottom: 15%;
+}
 
 .title-img{
-    
+
     padding-bottom: 5%;
     text-align: center;
     width: 500px;
     animation: rotation 35s infinite linear;
     position: relative;
-    left: 10%; 
-   
+    left: 10%;
+
 }
 
 
@@ -69,7 +73,7 @@ body{
 
     .title-img{
         width: 200px;
-       
+
     }
 }
 
@@ -107,7 +111,7 @@ body{
 
 #features{
     margin-top: 5%;
-  
+
     padding-left: 3%;
     padding-right: 3%;
     padding-bottom: 5%;
@@ -131,14 +135,14 @@ body{
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+
 }
 #daily-news h1{
     padding-bottom: 5%;
 }
 
 .carousel-item{
-    
+
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -159,7 +163,7 @@ hr{
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+
 }
 
 .contact-us-form{
@@ -171,7 +175,7 @@ hr{
     background-color: aliceblue;
     border-radius: 15px;
     box-shadow: 5px 5px 3px 3px whitesmoke  ;
-    
+
 }
 
 .copyright-footer{
