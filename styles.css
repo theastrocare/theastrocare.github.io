@@ -123,6 +123,24 @@ body{
 }
 
 
+/* Adding Extra space between 2 row only on big screens */
+@media (min-width: 600px){
+
+    .hr-features{
+        margin-top: 2%;
+        border: 10px dotted violet;
+        border-bottom: none;
+
+    }
+
+
+    .row-2{
+        margin-top: 5%;
+    }
+
+}
+
+
 /* Features section icons */
 
 .custom-heart{
@@ -149,20 +167,35 @@ body{
     
 }
 
+
+
 /* Daily news section styling */
+
+@keyframes bg-animate{
+    0%{
+        background: rgb(231, 175, 203);
+    }
+    50%{
+        background: rgb(210, 240, 252);
+    }
+    100%{ 
+        background: whitesmoke;
+    }
+}
 
 #daily-news{
     color: black;
     padding-top: 3%;
     padding-bottom: 5%;
     text-align: center;
-
+    
+    animation: bg-animate 15s infinite alternate-reverse;
     /* background-color: whitesmoke; */
-    background: linear-gradient(to right, #b9beeb, #da9baf);
+    /* background: linear-gradient(to right, #b9beeb, #da9baf); */
     /* background: #C33764;  
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  
     background: linear-gradient(to right, #1D2671, #C33764);  */
-
+    transition: animation;
     
 }
 #daily-news h1{
@@ -185,7 +218,8 @@ hr{
 }
 
 #contact-us{
-    
+    position: relative;
+    z-index: 3;
     padding-top: 3%;
     padding-bottom: 5%;
     
@@ -345,7 +379,46 @@ hr{
 }
 
 
+
+/* 12 Houses styling */
+
+#houses-section{
+   
+
+    
+    
+}
+
+#particles-js{
+    height: 65%;
+    width: 100%;
+    background-color: #111a68;
+   
+    position: absolute;
+}
+
+.astrology-data{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width:450px){
+    #particles-js{
+        height: 228vh;
+    }
+}
+
+/* FAQ section */
 #faq-section{
+     position: relative; 
+    z-index: 3;
+    padding-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
 
