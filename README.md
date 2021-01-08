@@ -1,5 +1,14 @@
 # horscope-landing
 
+
+
+Freelancing project to Develop Landing page website for an Astrologer.
+
+Main Team Members : 
+Divesh 
+Sahil
+Ananaya
+
 Technologies used in making this website as of now: 
 1. HTML
 2. CSS
