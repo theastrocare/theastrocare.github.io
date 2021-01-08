@@ -157,7 +157,8 @@ body{
     padding-bottom: 5%;
     text-align: center;
 
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    background: linear-gradient(to right, #b9beeb, #da9baf);
     /* background: #C33764;  
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  
     background: linear-gradient(to right, #1D2671, #C33764);  */
@@ -172,6 +173,7 @@ body{
     
     padding-left: 10%;
     padding-right: 10%;
+    font-size: large;
 }
 
 hr{
