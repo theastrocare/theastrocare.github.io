@@ -1,7 +1,7 @@
 # horscope-landing
 
 
-
+  
 Freelancing project to Develop Landing page website for an Astrologer.
 
 Main Team Members : 
