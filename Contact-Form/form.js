@@ -1,5 +1,5 @@
 // Set 'URL' to your API Gateway endpoint
-URL = 'https://670e9gndr2.execute-api.us-east-1.amazonaws.com/Prod';
+URL = 'https://jig1qbpypa.execute-api.us-east-1.amazonaws.com/PROD/';
 
 $(document).ready(function () {
 
@@ -25,7 +25,7 @@ $(document).ready(function () {
             contentType: 'application/json',
             crossDomain: true, // remove in production environments
             dataType: 'json',
-            // dataType: 'jsonp' // use JSONP for done() callback to work locally
+            dataType: 'jsonp' // use JSONP for done() callback to work locally
             data: JSON.stringify({
                 first_name: first_name,
                 last_name: last_name,
