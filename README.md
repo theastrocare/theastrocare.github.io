@@ -9,3 +9,10 @@ Technologies used in making this website as of now:
 6. AWS services : Lambda(serverless function, S3, SNS)
 
 
+Direct link to website :  https://diveshkswn.github.io/horscope-landing/
+
+
+Landing page : 
+![alt](https://diveshkswn.github.io/horscope-landing/)
+
+
