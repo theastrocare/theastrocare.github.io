@@ -5,6 +5,16 @@
 
 
 
+html,
+body{
+width:100%;
+overflow-x:hidden;
+scroll-behavior: smooth;
+}
+
+
+
+
 /* To remove creepy white line in right */
 /* Ref - > https://www.weblimitless.com/stop-website-showing-white-space-right-side/ */
 html,body
