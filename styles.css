@@ -2,20 +2,26 @@
     font-weight: bolder;
    
 }
-html{
-    scroll-behavior: smooth;
-}
 
-body{
+
+
+/* To remove creepy white line in right */
+/* Ref - > https://www.weblimitless.com/stop-website-showing-white-space-right-side/ */
+html,body
+{
+    width: 100%;
     margin: 0px;
     padding: 0px;
-    
+    /* removing kindoff botton scrolling(overflowing on x-axis is hidding now ) */
+    overflow-x: hidden; 
 }
 
 /* custom nabar css over bootstrap */
 .navbar{
+   max-width:100%;
 
     padding-left: 50px;
+    
   
     color: aliceblue;
 
@@ -29,6 +35,8 @@ body{
 
 
 #title{
+    margin: 0;
+    min-width: 100%;
     padding-top: 150px;
     padding-left: 5%;
     padding-right: 5%;
@@ -44,6 +52,7 @@ body{
 
 #title {
     color: aliceblue;
+    margin-right: 0px;
 }
 #title h1{
     font-weight: bolder;
@@ -110,7 +119,7 @@ body{
 
 #features{
     margin-top: 5%;
-  
+    margin-right: 0;
     padding-left: 3%;
     padding-right: 3%;
     padding-bottom: 5%;
