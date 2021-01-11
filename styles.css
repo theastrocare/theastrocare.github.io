@@ -1,7 +1,8 @@
 .nav-br{
     font-weight: bolder;
-   
+
 }
+
 
 
 
@@ -29,7 +30,7 @@ html,body
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+
 }
 
 
@@ -42,13 +43,13 @@ html,body
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
-    
+
     /* gradient for background */
 
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+
 }
 
 #title {
@@ -65,14 +66,14 @@ html,body
 }
 
 .title-img{
-    
+
     padding-bottom: 5%;
     text-align: center;
     width: 500px;
     animation: rotation 35s infinite linear;
     position: relative;
-    left: 10%; 
-   
+    left: 10%;
+
 }
 
 
@@ -82,7 +83,7 @@ html,body
 
     .title-img{
         width: 200px;
-       
+
     }
 }
 
@@ -120,7 +121,9 @@ html,body
 
 #features{
     margin-top: 5%;
+
     margin-right: 0;
+
     padding-left: 3%;
     padding-right: 3%;
     padding-bottom: 5%;
@@ -168,13 +171,13 @@ html,body
     from{
         top: 2px;
         color: black;
-        
+
     }
     to{
         top: 10px;
         color: #C33764;
     }
-    
+
 }
 
 
@@ -188,7 +191,7 @@ html,body
     50%{
         background: rgb(210, 240, 252);
     }
-    100%{ 
+    100%{
         background: whitesmoke;
     }
 }
@@ -198,22 +201,22 @@ html,body
     padding-top: 3%;
     padding-bottom: 5%;
     text-align: center;
-    
+
     animation: bg-animate 15s infinite alternate-reverse;
     /* background-color: whitesmoke; */
     /* background: linear-gradient(to right, #b9beeb, #da9baf); */
-    /* background: #C33764;  
-    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  
+    /* background: #C33764;
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);
     background: linear-gradient(to right, #1D2671, #C33764);  */
     transition: animation;
-    
+
 }
 #daily-news h1{
     padding-bottom: 5%;
 }
 
 .carousel-item{
-    
+
     padding-left: 10%;
     padding-right: 10%;
     font-size: large;
@@ -232,10 +235,10 @@ hr{
     z-index: 3;
     padding-top: 3%;
     padding-bottom: 5%;
-    
-     background: #C33764;  
-     background: -webkit-linear-gradient(to right, #1D2671, #C33764); 
-    background: linear-gradient(to right, #1D2671, #C33764); 
+
+     background: #C33764;
+     background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+    background: linear-gradient(to right, #1D2671, #C33764);
 }
 
 #contact-us h1, #contact-us p{
@@ -256,8 +259,8 @@ hr{
     background-color: aliceblue;
     border-radius: 15px;
     transition: 1s;
-    
-    
+
+
 }
 
 
@@ -268,14 +271,14 @@ hr{
 .contact-us-form:hover{
     height: 500px;
     width: 600px;
-    
-    
+
+
 }
 }
 
 
 .custom-form{
-    
+
     position: relative;
     text-align: center;
 }
@@ -283,7 +286,7 @@ hr{
 .contact-us-form label{
     font-weight: bolder;
     font-size: 20px;
-} 
+}
 
 .copyright-footer{
     margin-top: 5%;
@@ -315,7 +318,7 @@ hr{
     position: relative;
 
  margin-top: 10%;
-    
+
     width: 50%;
     border-radius: 30px;
     height: 60%;
@@ -324,7 +327,7 @@ hr{
     color: aliceblue;
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
-    z-index: 1;   
+    z-index: 1;
 }
 
 .custom-button::before{
@@ -359,14 +362,14 @@ hr{
     }
 
     .custom-form{
-        
+
         text-align: left;
     }
 
     .custom-button{
-        
+
         position: relative;
-    
+
      margin-top: 2%;
         height: 130%;
         width: 90%;
@@ -385,7 +388,7 @@ hr{
         width: 85%;
     }
 
-       
+
 }
 
 
@@ -398,7 +401,7 @@ hr{
     height: 100%;
     width: 100%;
     background-color: #111a68;
-   
+
     position: absolute;
 }
 
@@ -408,7 +411,7 @@ hr{
     padding-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
-    
+
     position: relative;
     z-index: 2;
 }
@@ -421,23 +424,20 @@ hr{
 
 /* FAQ section */
 #faq-section{
-     position: relative; 
+     position: relative;
     z-index: 3;
     padding-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
 
-    background: linear-gradient(to right, #1D2671, #C33764); 
+    background: linear-gradient(to right, #1D2671, #C33764);
 }
 
 .card-header{
     padding: 0%;
-    
+
 }
 
 #faq-section h1{
     color: aliceblue;
 }
-
-
-
