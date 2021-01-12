@@ -453,3 +453,8 @@ background-color: rgb(235, 230, 230);
 #faq-section h1{
     color: black;
 }
+
+.response-text {
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
