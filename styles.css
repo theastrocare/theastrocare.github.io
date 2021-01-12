@@ -103,6 +103,45 @@ html,body
   }
 
 
+  /* animated scroll down icon styling */
+
+
+  .scroll-downs {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    
+    width :34px;
+    height: 55px;
+  }
+  .mousey {
+    width: 7px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 7px;
+    height: 17px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
+
 
   /* Button styling */
 
@@ -248,15 +287,14 @@ hr{
 .contact-us-form{
     position: relative;
     padding: 2%;
-    padding-top: 2%;
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
-    height: 550px;
+    height: 600px;
     width: 500px;
     background-color: aliceblue;
     border-radius: 15px;
-    transition: 1s;
+    transition: width 1s;
    
 
 }
@@ -267,7 +305,7 @@ hr{
 @media (min-width: 700px){
 
 .contact-us-form:hover{
-    height: 550px;
+    /* height: 630px; */
     width: 600px;
     
 
@@ -328,18 +366,27 @@ hr{
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
     z-index: 1;
-}
-
-.custom-button:active{
+    outline: none;
     outline-style: none;
+    border: none;
+}
+.custom-button:focus{
+    outline-style: none;
+}
+.custom-button:active{
+    outline-style: hidden;
     outline: none;
     border: none;
 }
 .custom-button::before:active{
-    outline-style: none;
+    outline-style: hidden;
     outline: none;
+    border: none;
 }
 .custom-button::before{
+    outline-style: none;
+    outline: none;
+    border: none;
     border-radius: 30px;
     position: absolute;
   content: "";
@@ -371,7 +418,7 @@ hr{
     }
 
     .contact-us-form{
-        height: 60vh;
+        height: 72vh;
     }
     .custom-form{
 
@@ -379,7 +426,7 @@ hr{
     }
 
     .custom-button{
-
+       
         position: relative;
 
      margin-top: 2%;
@@ -423,6 +470,7 @@ hr{
     padding-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 5%;
 
     position: relative;
     z-index: 2;
