@@ -133,6 +133,7 @@ html,body
 .custom-feature{
     margin-top: 5px;
     margin-bottom:5px ;
+    padding: 5%;
 }
 
 
@@ -147,10 +148,7 @@ html,body
     }
 
 
-    .row-2{
-        margin-top: 5%;
-    }
-
+   
 }
 
 
@@ -254,12 +252,12 @@ hr{
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
-    height: 400px;
+    height: 550px;
     width: 500px;
     background-color: aliceblue;
     border-radius: 15px;
     transition: 1s;
-
+   
 
 }
 
@@ -269,8 +267,9 @@ hr{
 @media (min-width: 700px){
 
 .contact-us-form:hover{
-    height: 500px;
+    height: 550px;
     width: 600px;
+    
 
 
 }
@@ -278,9 +277,10 @@ hr{
 
 
 .custom-form{
-
+   
     position: relative;
     text-align: center;
+    
 }
 
 .contact-us-form label{
@@ -330,6 +330,15 @@ hr{
     z-index: 1;
 }
 
+.custom-button:active{
+    outline-style: none;
+    outline: none;
+    border: none;
+}
+.custom-button::before:active{
+    outline-style: none;
+    outline: none;
+}
 .custom-button::before{
     border-radius: 30px;
     position: absolute;
@@ -361,6 +370,9 @@ hr{
         width: 60%;
     }
 
+    .contact-us-form{
+        height: 60vh;
+    }
     .custom-form{
 
         text-align: left;
@@ -429,8 +441,8 @@ hr{
     padding-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
-
-    background: linear-gradient(to right, #1D2671, #C33764);
+    padding-bottom: 5%;
+background-color: rgb(235, 230, 230);
 }
 
 .card-header{
@@ -439,5 +451,5 @@ hr{
 }
 
 #faq-section h1{
-    color: aliceblue;
+    color: black;
 }

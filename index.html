@@ -1,4 +1,4 @@
-<!DOCTYPE html ">
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -44,16 +44,20 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav col-md-3 ml-auto">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="#features">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#houses-section">12 Houses</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact-us">Contact US</a>
                     </li>
+                    
                 </ul>
             </div>
         </nav>
@@ -108,32 +112,33 @@
 
 
     <section id="features">
+        <h1>Our services</h1>
 
         <!-- Row no 1 -->
         <div class="row">
-            <div class="custom-feature col-lg-4 col-md-6 col-sm-12">
+            <div class="custom-feature col-lg-6 col-md-6 col-sm-12">
                 <!-- <h2>Some cute logo</h2> -->
                 <i class="custom-heart fas fa-heart fa-3x"></i>
                 <h2>KUNDLI MATCHING</h2>
                 <p>Perform Kundli Milan based on ashtakoot system of Vedic Astrology to ensure the compatibility of two individuals in order to have a successful marriage.</p>
             </div>
-            <div class="custom-feature col-lg-4 col-md-6 col-sm-12">
+            <div class="custom-feature col-lg-6 col-md-6 col-sm-12">
                 <h2>Some cute logo</h2>
                 <h2>HOROSCOPE</h2>
                 <p>Provide daily, monthly, and periodical horoscope predictions that will reflect your past, present, and future life situations, unlock opportunities, and peace of mind from future challenges.</p>
             </div>
         </div>
-
-        <hr class="hr-features">
+<!-- 
+        <hr class="hr-features"> -->
         <!-- Row number 2  -->
         <div class="row row-2">
-            <div class="custom-feature col-lg-4 col-md-6 col-sm-12">
+            <div class="custom-feature col-lg-6 col-md-6 col-sm-12">
                 <!-- <h2>Some cute logo</h2> -->
-                <i class="fas fa-hand-paper"></i>
+                <i class="fas fa-hand-paper fa-3x"></i>
                 <h2>PALMISTRY</h2>
                 <p>Perform detailed reading of palm lines and decipher the paths which are scripted in your fate.</p>
             </div>
-            <div class="custom-feature col-lg-4 col-md-6 col-sm-12">
+            <div class="custom-feature col-lg-6 col-md-6 col-sm-12">
                 <h2>Some cute logo</h2>
                 <h2>VASTU - SHASTRA</h2>
                 <p>Offer consultancy on Vastu related services so as to harness maximum energy from your house or office for you to reap benefits out of it.</p>
@@ -194,7 +199,7 @@
             <h1>Want to know what 12 houses of Astrology are?</h1>
 
             <a tabindex="0" class="btn btn-primary" data-placement="right" role="button" data-toggle="popover"
-                data-trigger="focus" title="About"
+                data-trigger="focus" title="About" 
                 data-content="Also known as Lagna. It is the house of Self, physical appearance, temperament, nature, body frame, complexion, health, and ego.
 If this house is weak, a person may face the problem of headaches, acne, mental illness.
 This house represents Aries.">House 1</a>
@@ -412,7 +417,9 @@ This house represents Aries.">House 1</a>
 
 
     <section id="contact-us">
-        <hr>
+
+        <!-- Horizontal rule(Optional) -->
+        <!-- <hr> -->
 
         <h1>This will be contact us </h1>
 
@@ -441,7 +448,9 @@ This house represents Aries.">House 1</a>
                 <div class="contact-us-form">
 
                     <form class="custom-form">
-                        <div class="form-row">
+
+                        <!-- Email in form optional -->
+                        <!-- <div class="form-row">
                             <div class="col-lg-3 col-md-3 col-sm-3">
                                 <label>Email</label>
                             </div>
@@ -449,7 +458,7 @@ This house represents Aries.">House 1</a>
                             <div class="col-lg-8 col-md-8 col-sm-8">
                                 <input type="text" class="form-control" placeholder="Email">
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="form-row">
                             <div class="col-lg-3 col-md-3 col-sm-3">
@@ -460,14 +469,32 @@ This house represents Aries.">House 1</a>
                                 <input type="text" class="form-control" placeholder="Name">
                             </div>
                         </div>
-
                         <div class="form-row">
                             <div class="col-lg-3 col-md-3 col-sm-3">
-                                <label>Age</label>
+                                <label>Place of Birth</label>
                             </div>
 
                             <div class="col-lg-8 col-md-8 col-sm-8">
-                                <input type="text" class="form-control" placeholder="Age">
+                                <input type="text" class="form-control" placeholder="Place of Birth">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <label>DOB</label>
+                            </div>
+
+                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                <input type="date" class="form-control" placeholder="Date of Birth">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <label>Time of Birth</label>
+                            </div>
+
+                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                <input type="time" class="form-control" placeholder="Time of Birth">
                             </div>
                         </div>
 
