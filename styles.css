@@ -103,6 +103,8 @@ html,body
   }
 
 
+
+
   /* animated scroll down icon styling */
 
 
@@ -290,7 +292,7 @@ hr{
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
-    height: 600px;
+    height: 650px;
     width: 500px;
     background-color: aliceblue;
     border-radius: 15px;
@@ -299,6 +301,13 @@ hr{
 
 }
 
+
+.loading-animation{
+    visibility: hidden;
+    
+    text-align: center;
+    box-sizing: border-box;
+}
 
 /* Hover effect only on big screens */
 
@@ -418,7 +427,7 @@ hr{
     }
 
     .contact-us-form{
-        height: 72vh;
+        height: 75vh;
     }
     .custom-form{
 
