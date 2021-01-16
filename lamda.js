@@ -1,5 +1,5 @@
 // Set 'URL' to your API Gateway endpoint
-URL = 'https://jig1qbpypa.execute-api.us-east-1.amazonaws.com/PROD/';
+URL = 'https://z6ckz9ih6c.execute-api.us-east-1.amazonaws.com/Prod';
 
 $(document).ready(function () {
 
