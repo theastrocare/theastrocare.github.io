@@ -22,7 +22,7 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
     <!-- custom css -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-dark.css" id="theme-link">
 
 
 </head>
@@ -91,6 +91,7 @@
                     </ul>
                     <button type="button" class="btn btn-outline-success btn-lg">Contact Us</button>
                     <button type="button" class="btn btn-outline-info btn-lg">Know More</button>
+                    <button type="button" id="drk-btn" class="btn btn-outline-info btn-lg">Dark / Light theme toggle</button>
                 </div>
                 <div class="custom-col col-lg-6 col-md-6 col-sm-12">
                     <img class="title-img" src="pngegg.png" alt="">
@@ -583,5 +584,30 @@ This house represents Aries.">House 1</a>
 <!-- No need to add cdn of jquery again as it will create conflicts in jquery classes -->
 
 <script src="lamda.js"></script>
+
+
+Dark theme toggle button 
+<script>
+    var btnElement = document.getElementById("drk-btn");
+
+    // Select the stylesheet <link>
+    const theme = document.querySelector("#theme-link");
+    
+    
+    btnElement.addEventListener("click",function(){
+
+        // If the current URL contains "ligh-theme.css"
+  if (theme.getAttribute("href") == "styles.css") {
+    // ... then switch it to "styles-dark.css"
+    theme.href = "styles-dark.css";
+  // Otherwise...
+  } else {
+    // ... switch it to "styles.css"
+    theme.href = "styles.css";
+  }
+    })
+
+</script>
+
 
 </html>
