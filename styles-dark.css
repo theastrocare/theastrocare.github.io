@@ -16,24 +16,21 @@ html,body
     scroll-behavior: smooth;
     /* removing kindoff botton scrolling(overflowing on x-axis is hidding now ) */
     overflow-x: hidden; 
-
 }
 
 /* custom nabar css over bootstrap */
+
 .navbar{
    max-width:100%;
 
     padding-left: 50px;
     
   
-    color: aliceblue;
+    background: #41295a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    background: #C33764;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
 }
-
 
 
 
@@ -47,9 +44,11 @@ html,body
 
     /* gradient for background */
 
-    background: #C33764;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+    background: #41295a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 }
 
@@ -162,10 +161,13 @@ html,body
 /* Features section styling */
 
 #features{
-    margin-top: 5%;
-
+   
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F0743, #41295a) ;
+    color: aliceblue;
     margin-right: 0;
-
+    padding-top: 5%;
     padding-left: 3%;
     padding-right: 3%;
     padding-bottom: 5%;
@@ -226,18 +228,18 @@ html,body
 
 @keyframes bg-animate{
     0%{
-        background: rgb(231, 175, 203);
+        background: rgb(12, 1, 104);
     }
     50%{
-        background: rgb(210, 240, 252);
+        background: rgb(73, 3, 70);
     }
     100%{
-        background: whitesmoke;
+        background: rgb(78, 5, 97);
     }
 }
 
 #daily-news{
-    color: black;
+    color: aliceblue;
     padding-top: 3%;
     padding-bottom: 5%;
     text-align: center;
@@ -276,9 +278,11 @@ hr{
     padding-top: 3%;
     padding-bottom: 5%;
 
-     background: #C33764;
-     background: -webkit-linear-gradient(to right, #1D2671, #C33764);
-    background: linear-gradient(to right, #1D2671, #C33764);
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
 }
 
 #contact-us h1, #contact-us p{
@@ -500,7 +504,10 @@ hr{
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 5%;
-background-color: rgb(235, 230, 230);
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 .card-header{
@@ -509,7 +516,7 @@ background-color: rgb(235, 230, 230);
 }
 
 #faq-section h1{
-    color: black;
+    color: aliceblue;
 }
 
 .response-text {

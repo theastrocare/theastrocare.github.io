@@ -24,17 +24,11 @@ def lambda_handler(event, context):
     try:
 
         content = 'Message from ' + \
-            data['first_name'] + ' ' + data['last_name'] + '\n' + \
-            data['company'] + '\n' + \
-            data['address1'] + '\n' + \
-            data['address2'] + '\n' + \
-            data['city'] + '\n' + \
-            data['state'] + '\n' + \
-            data['zip'] + '\n' + \
-            data['email'] + '\n' + \
-            data['phone'] + '\n' + \
-            data['budget'] + '\n' + \
-            data['message']
+            data['name'] + '\n' + \
+            data['City'] + '\n' + \
+            data['DOB'] + '\n' + \
+            data['TOB']
+            
         save_to_dynamodb(data)
         response = send_mail_to_user(data, content)
     except ClientError as e:
@@ -54,20 +48,10 @@ def save_to_dynamodb(data):
     table = dynamodb.Table(DYNAMODB_TABLE)
     item = {
         'id': str(uuid.uuid1()),
-        'first_name': data['first_name'],  # required
-        'last_name': data['last_name'],  # required
-        'company': data['company'] if data['company'] else None,
-        'address1': data['address1'] if data['address1'] else None,
-        'address2': data['address2'] if data['address2'] else None,
-        'city': data['city'] if data['city'] else None,
-        'state': data['state'] if data['state'] else None,
-        'zip': data['zip'] if data['zip'] else None,
-        'email': data['email'],  # required
-        'phone': data['phone'],  # required
-        'budget': data['budget'],  # required
-        'message': data['message'],  # required
-        'createdAt': timestamp,
-        'updatedAt': timestamp
+        'name': data['name'],  # required
+        'City': data['City'],  # required
+        'DOB': data['DOB'],
+        'TOB': data['TOB'] 
     }
     table.put_item(Item=item)
     return
@@ -78,13 +62,13 @@ def send_mail_to_user(data, content):
         Source=SENDER_EMAIL,
         Destination={
             'ToAddresses': [
-                data['email'],
+                SENDER_EMAIL,
             ],
         },
         Message={
             'Subject': {
                 'Charset': CHARSET,
-                'Data': 'Thank you for contacting us!'
+                'Data': 'You have new entry in the form'
             },
             'Body': {
                 'Html': {
