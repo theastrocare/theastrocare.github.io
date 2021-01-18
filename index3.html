@@ -34,6 +34,11 @@
     .form-row{
         padding: 2%;
     }
+
+    .loading-animation{
+        opacity: 0;
+    }
+
 </style>
 <body>
     <h1>Contact us form with Google APP script
@@ -95,9 +100,9 @@
                 <div class="col-lg-12 col-md-12 col-sm-12">
 
                     <!-- loading animation on form submition -->
-                    <!-- <div class="spinner-border text-info " role="status">
+                    <div class="spinner-border text-info " role="status">
                         <span class="sr-only">Loading...</span>
-                      </div> -->
+                      </div>
 
                 </div>
             
@@ -109,25 +114,31 @@
                     <button id="submit" type="submit" class="custom-button">Submit</button>
                 </div>
             </div>
-
+            <div id="form-response" class="response-text"></div>
 
 </body>
 
 <script>
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxJsqog2J2UKKPcMpFWgNpmXJ9jwxWvc-ItRwFToS2QTgNq_rQ/exec'
+//Google sheet App script url for sheet in diveshkswn@gmail.com
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwpVYJCp3mra8hEZ0rj4iVoTdcNfx-sDMzoMdA22bU1SiRuuSTCZ8RFow/exec'
 
 const form = document.forms['google-sheet']
 
 
 
 form.addEventListener('submit', e => {
+    console.log("Google Forms...")
+    document.getElementById("loading-id").style.opacity=1;
 
   e.preventDefault()
 
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(document.getElementById("loading-id").style.opacity=0)
+  .then(document.getElementById("form-response").innerHTML="Thanks for Contacting us..! We Will Contact You Soon...")
 
-    .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+    // .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
 
     .catch(error => console.error('Error!', error.message))
 
