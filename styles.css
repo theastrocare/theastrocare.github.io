@@ -290,7 +290,7 @@ hr{
 .contact-us-form{
     position: relative;
     padding: 2%;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
     height: 650px;
@@ -316,7 +316,7 @@ hr{
 
 .contact-us-form:hover{
     /* height: 630px; */
-    width: 600px;
+    width: 560px;
     
 
 
@@ -342,7 +342,7 @@ hr{
 }
 
 .form-row{
-    padding-top: 5%;
+    padding-top: 3%;
     padding-bottom: 3%;
 }
 
@@ -428,7 +428,7 @@ hr{
     }
 
     .contact-us-form{
-        height: 75vh;
+        height: 80vh;
     }
     .custom-form{
 
@@ -520,4 +520,11 @@ background-color: rgb(235, 230, 230);
 
   #form-time{
       visibility: hidden;
+  }
+
+
+  #form-response{
+      padding-bottom: 2%;
+      font-weight: bolder;
+      font-size: medium;
   }
