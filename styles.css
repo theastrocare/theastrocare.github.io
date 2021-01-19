@@ -516,3 +516,8 @@ background-color: rgb(235, 230, 230);
     padding: 2rem 1.5rem;
     text-align: center;
   }
+
+
+  #form-time{
+      visibility: hidden;
+  }
