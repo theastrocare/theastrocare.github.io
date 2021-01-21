@@ -11,6 +11,10 @@
     <title>Horscope prototype</title>
 
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Favicon Link -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- Bootstap css  -->
@@ -142,14 +146,14 @@
 
         <!-- Row no 1 -->
         <div class="row">
-            <div class="custom-feature col-lg-6 col-md-6 col-sm-12">
+            <div class="custom-feature col-lg-6 col-md-6 col-sm-12"  data-aos="fade-down-right">
                 <!-- <h2>Some cute logo</h2> -->
                 <i class="custom-heart fas fa-heart fa-3x"></i>
                 <h2>KUNDLI MATCHING</h2>
                 <p>Perform Kundli Milan based on ashtakoot system of Vedic Astrology to ensure the compatibility of two
                     individuals in order to have a successful marriage.</p>
             </div>
-            <div class="custom-feature col-lg-6 col-md-6 col-sm-12">
+            <div class="custom-feature col-lg-6 col-md-6 col-sm-12"  data-aos="fade-down-left">
                 <h2>Some cute logo</h2>
                 <h2>HOROSCOPE</h2>
                 <p>Provide daily, monthly, and periodical horoscope predictions that will reflect your past, present,
@@ -160,13 +164,13 @@
         <hr class="hr-features"> -->
         <!-- Row number 2  -->
         <div class="row row-2">
-            <div class="custom-feature col-lg-6 col-md-6 col-sm-12">
+            <div class="custom-feature col-lg-6 col-md-6 col-sm-12" data-aos="flip-right"  >
                 <!-- <h2>Some cute logo</h2> -->
                 <i class="fas fa-hand-paper fa-3x"></i>
                 <h2>PALMISTRY</h2>
                 <p>Perform detailed reading of palm lines and decipher the paths which are scripted in your fate.</p>
             </div>
-            <div class="custom-feature col-lg-6 col-md-6 col-sm-12">
+            <div class="custom-feature col-lg-6 col-md-6 col-sm-12"  data-aos="flip-left">
                 <h2>Some cute logo</h2>
                 <h2>VASTU - SHASTRA</h2>
                 <p>Offer consultancy on Vastu related services so as to harness maximum energy from your house or office
@@ -701,5 +705,11 @@ This house represents Aries.">House 1</a>
     })
 </script>
 
+
+
+<!-- AOS Script -->
+<script>
+    AOS.init();
+  </script>
 
 </html>
