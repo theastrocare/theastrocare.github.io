@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="rashi, Match, Making, Horoscope, Palmistry, Vastu, SHASTRA, fal, houses, astrology, forecast, appointment, jyothishi, hastrekha, prasadpurkait, prasad, faq, Nakshatra, Dasha, Vishotari Dasha, Antardasha, Pratyantar Dasha, Sukshma Dasha, Raj Yoga, Grahan Yoga, Pran Dasha, purkait">
+    <meta name="keywords"
+        content="rashi, Match, Making, Horoscope, Palmistry, Vastu, SHASTRA, fal, houses, astrology, forecast, appointment, jyothishi, hastrekha, prasadpurkait, prasad, faq, Nakshatra, Dasha, Vishotari Dasha, Antardasha, Pratyantar Dasha, Sukshma Dasha, Raj Yoga, Grahan Yoga, Pran Dasha, purkait">
     <meta name="author" content="prasadpurkait">
     <meta name="description" content="Get your Horoscope, kundli and more">
     <title>Horscope prototype</title>
@@ -93,9 +94,13 @@
                         </li>
                         <li>Through Horoscope your planet can be activated by some remedies.</li>
                     </ul>
-                    <button type="button" class="btn btn-outline-success btn-lg" onclick=document.location="#contact-us">Contact Us</button>
-                    <button type="button" class="btn btn-outline-info btn-lg" onclick=document.location="#features">Know More</button>
-                    <button type="button" id="drk-btn" class="btn btn-outline-info btn-lg">Dark / Light theme toggle</button>
+                    <div id="outerbuttons">
+                        <button type="button" id="inner" class="btn btn-outline-success btn-lg"
+                            onclick=document.location="#contact-us">Contact Us</button>
+                        <button type="button" id="inner" class="btn btn-outline-info btn-lg"
+                            onclick=document.location="#features">Know More</button>
+                        <!--button type="button" id="drk-btn" class="btn btn-outline-info btn-lg">Dark / Light theme toggle</button-->
+                    </div>
                 </div>
                 <div class="custom-col col-lg-6 col-md-6 col-sm-12">
                     <img class="title-img" src="pngegg.png" alt="">
@@ -109,9 +114,9 @@
                 <div class="scroll-downs">
                     <div class="mousey">
 
-                      <div class="scroller"></div>
+                        <div class="scroller"></div>
                     </div>
-                  </div>
+                </div>
 
             </a>
 
@@ -136,15 +141,17 @@
                 <!-- <h2>Some cute logo</h2> -->
                 <i class="custom-heart fas fa-heart fa-3x"></i>
                 <h2>KUNDLI MATCHING</h2>
-                <p>Perform Kundli Milan based on ashtakoot system of Vedic Astrology to ensure the compatibility of two individuals in order to have a successful marriage.</p>
+                <p>Perform Kundli Milan based on ashtakoot system of Vedic Astrology to ensure the compatibility of two
+                    individuals in order to have a successful marriage.</p>
             </div>
             <div class="custom-feature col-lg-6 col-md-6 col-sm-12">
                 <h2>Some cute logo</h2>
                 <h2>HOROSCOPE</h2>
-                <p>Provide daily, monthly, and periodical horoscope predictions that will reflect your past, present, and future life situations, unlock opportunities, and peace of mind from future challenges.</p>
+                <p>Provide daily, monthly, and periodical horoscope predictions that will reflect your past, present,
+                    and future life situations, unlock opportunities, and peace of mind from future challenges.</p>
             </div>
         </div>
-<!--
+        <!--
         <hr class="hr-features"> -->
         <!-- Row number 2  -->
         <div class="row row-2">
@@ -157,7 +164,8 @@
             <div class="custom-feature col-lg-6 col-md-6 col-sm-12">
                 <h2>Some cute logo</h2>
                 <h2>VASTU - SHASTRA</h2>
-                <p>Offer consultancy on Vastu related services so as to harness maximum energy from your house or office for you to reap benefits out of it.</p>
+                <p>Offer consultancy on Vastu related services so as to harness maximum energy from your house or office
+                    for you to reap benefits out of it.</p>
             </div>
         </div>
 
@@ -168,31 +176,39 @@
 
 
     <section id="daily-news">
-        <h1>Some daily news about horscope to make site a bit intresting</h1>
+        <h1>इस महीने का राशिफल</h1>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-interval="10000">
                     <h3>सूर्य का मकर राशि मे प्रवेश </h3>
                     <p>चौदह जनवरी को सूर्य मकर राशि मे आ गए हैं और चौदह फ़रवरी तक मकर राशी में रहेंगे।
-सूर्य हमेशा हर महीने के चौदह तारीख को अपना राशि परिवर्तन करते हैं ।  इस घटना को संक्रांति कहते हैं । सूर्य जब धनु राशि से होकर चौदह जनवरी को मकर राशि मे आते हैं तो उसे मकर संक्रांति कहते है ।
-यह एक महत्वपूर्ण घटना हैं क्योंकि इसी दिन से सूर्य उत्तरायण की शुरुआत होती है ।  पंद्रह जनवरी से पंद्रह जुलाई तक सूर्य उत्तरायण मे रहता है और पंद्रह जुलाई से पंद्रह जनवरी तक दक्षिणायन मे होता है । उत्तरायण मे सूर्य बलि हो जाता है ।
-</p>
+                        सूर्य हमेशा हर महीने के चौदह तारीख को अपना राशि परिवर्तन करते हैं । इस घटना को संक्रांति कहते
+                        हैं । सूर्य जब धनु राशि से होकर चौदह जनवरी को मकर राशि मे आते हैं तो उसे मकर संक्रांति कहते है ।
+                        यह एक महत्वपूर्ण घटना हैं क्योंकि इसी दिन से सूर्य उत्तरायण की शुरुआत होती है । पंद्रह जनवरी से
+                        पंद्रह जुलाई तक सूर्य उत्तरायण मे रहता है और पंद्रह जुलाई से पंद्रह जनवरी तक दक्षिणायन मे होता
+                        है । उत्तरायण मे सूर्य बलि हो जाता है ।
+                    </p>
                 </div>
                 <div class="carousel-item" data-interval="10000">
                     <h3>मेष राशि</h3>
-                    <p> सूर्य मेष राशि वालो के लिए अच्छा फल लेकर आएगा।  क्योंकि सूर्य मकर राशि मे दिग्बली होता है।  करियर और काम मे सफलता मिलेगी ।</p>
+                    <p> सूर्य मेष राशि वालो के लिए अच्छा फल लेकर आएगा। क्योंकि सूर्य मकर राशि मे दिग्बली होता है। करियर
+                        और काम मे सफलता मिलेगी ।</p>
                 </div>
                 <div class="carousel-item" data-interval="10000">
                     <h3>वृष राशि</h3>
-                    <p>वृष राशि का स्वामी शुक्र है।  चौथे घर के मालिक के भाग्य स्थान मे बैठे रहने से अच्छे फल तथा धन कमाने  के अच्छे अवसर  मिलेंगे। </p>
+                    <p>वृष राशि का स्वामी शुक्र है। चौथे घर के मालिक के भाग्य स्थान मे बैठे रहने से अच्छे फल तथा धन
+                        कमाने के अच्छे अवसर मिलेंगे। </p>
                 </div>
                 <div class="carousel-item" data-interval="10000">
                     <h3>मिथुन राशि</h3>
-                    <p>मिथुन राशि का स्वामी बुध है।  सूर्य का आठवे भाव मे गोचर होगा।  जो लोग तकनीकी छेत्र या सेना मे होंगे उन्हें ज्यादा लाभ होगा।  सूर्य के आठवे भाव मे गोचर होने की वजह से स्वास्थ्य सम्बंधित परेशानी रहेगी। </p>
+                    <p>मिथुन राशि का स्वामी बुध है। सूर्य का आठवे भाव मे गोचर होगा। जो लोग तकनीकी छेत्र या सेना मे होंगे
+                        उन्हें ज्यादा लाभ होगा। सूर्य के आठवे भाव मे गोचर होने की वजह से स्वास्थ्य सम्बंधित परेशानी
+                        रहेगी। </p>
                 </div>
                 <div class="carousel-item" data-interval="10000">
                     <h3>कर्क राशि</h3>
-                    <p>सूर्य का सातवे घर मे गोचर होगा अतः पति पत्नी अहंकारवश आपसी सम्बन्ध ख़राब करने से बचे। व्यवसाय में लाभ होगा। </p>
+                    <p>सूर्य का सातवे घर मे गोचर होगा अतः पति पत्नी अहंकारवश आपसी सम्बन्ध ख़राब करने से बचे। व्यवसाय में
+                        लाभ होगा। </p>
                 </div>
                 <div class="carousel-item" data-interval="10000">
                     <h3>सिंह राशि</h3>
@@ -200,33 +216,35 @@
                 </div>
                 <div class="carousel-item" data-interval="10000">
                     <h3>कन्या राशि</h3>
-                    <p>मिलाजुला परिणाम मिलेगा।  विदेश यात्रा हो सकती है। </p>
+                    <p>मिलाजुला परिणाम मिलेगा। विदेश यात्रा हो सकती है। </p>
                 </div>
                 <div class="carousel-item" data-interval="10000">
                     <h3>तुला राशि</h3>
-                    <p>सूर्य चौथे भाव मे गोचर करेगा।  सूर्य की सातवीं दृष्टि कर्म भाव मे पड़ेगी अतः तुला राशि वाले जातको का ज्यादा लाभ होगा। सम्पति मे वृद्धि होगी । वाहन भी खरीद सकते हैं। </p>
+                    <p>सूर्य चौथे भाव मे गोचर करेगा। सूर्य की सातवीं दृष्टि कर्म भाव मे पड़ेगी अतः तुला राशि वाले जातको
+                        का ज्यादा लाभ होगा। सम्पति मे वृद्धि होगी । वाहन भी खरीद सकते हैं। </p>
                 </div>
                 <div class="carousel-item" data-interval="10000">
                     <h3>वृश्चिक राशि</h3>
-                    <p>सूर्य का तीसरे भाव मे गोचर होगा।  यात्राओं के अधिक योग हैं।  भाई/बहन से सुख मिलेगा।</p>
+                    <p>सूर्य का तीसरे भाव मे गोचर होगा। यात्राओं के अधिक योग हैं। भाई/बहन से सुख मिलेगा।</p>
                 </div>
                 <div class="carousel-item" data-interval="10000">
                     <h3>धनु राशि</h3>
-                    <p>सूर्य का  द्वितीय भाव मे गोचर होगा। धार्मिक व्यक्तियों के लिए बहुत अच्छा समय होगा।  वाणी मे नम्रता रखनी  होगी। </p>
+                    <p>सूर्य का द्वितीय भाव मे गोचर होगा। धार्मिक व्यक्तियों के लिए बहुत अच्छा समय होगा। वाणी मे नम्रता
+                        रखनी होगी। </p>
                 </div>
                 <div class="carousel-item" data-interval="10000">
                     <h3>मकर राशि</h3>
-                    <p>सूर्य का यह गोचर अच्छा नहीं है।  तकलीफ बढ़ाएगा।  सूर्य की अराधना करे।</p>
+                    <p>सूर्य का यह गोचर अच्छा नहीं है। तकलीफ बढ़ाएगा। सूर्य की अराधना करे।</p>
                 </div>
                 <div class="carousel-item" data-interval="10000">
                     <h3>कुम्भ राशि</h3>
-                    <p>सूर्य का यह गोचर बारहवे भाव यानि व्यय स्थान पर होगा।  खरचे मे वृद्धि होगी। आय मे कमी होगी। </p>
+                    <p>सूर्य का यह गोचर बारहवे भाव यानि व्यय स्थान पर होगा। खरचे मे वृद्धि होगी। आय मे कमी होगी। </p>
                 </div>
                 <div class="carousel-item" data-interval="10000">
                     <h3>मीन राशि</h3>
-                    <p>सूर्य आय भाव मे गोचर करेगा।  आय मे वृद्धि होगी। कर्ज लेना पड़ सकता है।</p>
+                    <p>सूर्य आय भाव मे गोचर करेगा। आय मे वृद्धि होगी। कर्ज लेना पड़ सकता है।</p>
                 </div>
-                
+
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -253,34 +271,39 @@
             <h1>Want to know what 12 houses of Astrology are?</h1>
 
             <a tabindex="0" class="btn btn-primary" data-placement="right" role="button" data-toggle="popover"
-                data-trigger="focus" title="About"
-                data-content="Also known as Lagna. It is the house of Self, physical appearance, temperament, nature, body frame, complexion, health, and ego.
+                data-trigger="focus" title="About" data-content="Also known as Lagna. It is the house of Self, physical appearance, temperament, nature, body frame, complexion, health, and ego.
 If this house is weak, a person may face the problem of headaches, acne, mental illness.
 This house represents Aries.">House 1</a>
 
             <a tabindex="0" class="btn btn-primary" data-placement="right" role="button" data-toggle="popover"
                 data-trigger="focus" title="About"
-                data-content=" Also known as Dhana Bhav or Income which includes finance, belongings of your own possession. Also known as Vani Bhav which includes body organs such as tongue, teeth, eyes, mouth, nose, and neck that are ruled by the second house. It represents Tauras.">House 2</a>
+                data-content=" Also known as Dhana Bhav or Income which includes finance, belongings of your own possession. Also known as Vani Bhav which includes body organs such as tongue, teeth, eyes, mouth, nose, and neck that are ruled by the second house. It represents Tauras.">House
+                2</a>
 
             <a tabindex="0" class="btn btn-primary" data-placement="right" role="button" data-toggle="popover"
                 data-trigger="focus" title="About"
-                data-content="This house represents Self Ability, determination, ambition, the younger brother, sisters, and neighbors. It also tells about body parts which include the legs, hands, arms, lungs, and nervous system. It represents Gemini.">House 3</a>
+                data-content="This house represents Self Ability, determination, ambition, the younger brother, sisters, and neighbors. It also tells about body parts which include the legs, hands, arms, lungs, and nervous system. It represents Gemini.">House
+                3</a>
 
             <a tabindex="0" class="btn btn-primary" data-placement="right" role="button" data-toggle="popover"
                 data-trigger="focus" title="About"
-                data-content="Also known as Sukh Bhav. It relates to land, your own house, vehicle, and your relation with your mother. It governs the digestive organs, lung, and coronary disorders. It represents Cancer.">House 4</a>
+                data-content="Also known as Sukh Bhav. It relates to land, your own house, vehicle, and your relation with your mother. It governs the digestive organs, lung, and coronary disorders. It represents Cancer.">House
+                4</a>
 
             <a tabindex="0" class="btn btn-primary" data-placement="right" role="button" data-toggle="popover"
                 data-trigger="focus" title="About"
-                data-content="Also known as Putra Bhav, house of creativity and Education. It rules over the heart, pancreas, and spine. It represents Leo.">House 5</a>
+                data-content="Also known as Putra Bhav, house of creativity and Education. It rules over the heart, pancreas, and spine. It represents Leo.">House
+                5</a>
 
             <a tabindex="0" class="btn btn-primary" data-placement="right" role="button" data-toggle="popover"
                 data-trigger="focus" title="About"
-                data-content="Also known as House of Enemy. It relates to debt, obstacles, court, and police. It also rules the waist lower abdomen, kidney, small intestine. It represents Virgo.">House 6</a>
+                data-content="Also known as House of Enemy. It relates to debt, obstacles, court, and police. It also rules the waist lower abdomen, kidney, small intestine. It represents Virgo.">House
+                6</a>
 
             <a tabindex="0" class="btn btn-primary" data-placement="right" role="button" data-toggle="popover"
                 data-trigger="focus" title="About"
-                data-content="It is a House of Spouse and Business Partner. This house relates to all kinds of partnerships. It governs over ovaries, kidneys, and lower half of the back. It represents Libra.">House 7</a>
+                data-content="It is a House of Spouse and Business Partner. This house relates to all kinds of partnerships. It governs over ovaries, kidneys, and lower half of the back. It represents Libra.">House
+                7</a>
 
             <a tabindex="0" class="btn btn-primary" data-placement="right" role="button" data-toggle="popover"
                 data-trigger="focus" title="About"
@@ -292,15 +315,18 @@ This house represents Aries.">House 1</a>
 
             <a tabindex="0" class="btn btn-primary" data-placement="right" role="button" data-toggle="popover"
                 data-trigger="focus" title="About"
-                data-content="Also known as Karma Bhav. It relates to name, fame, job, profession, father, and financial success. It represents Capricorn.">House 10</a>
+                data-content="Also known as Karma Bhav. It relates to name, fame, job, profession, father, and financial success. It represents Capricorn.">House
+                10</a>
 
             <a tabindex="0" class="btn btn-primary" data-placement="right" role="button" data-toggle="popover"
                 data-trigger="focus" title="About"
-                data-content="Is a house of Earnings. This house can also tell us the relationship with your elder brother. It represents Aquarius.">House 11</a>
+                data-content="Is a house of Earnings. This house can also tell us the relationship with your elder brother. It represents Aquarius.">House
+                11</a>
 
             <a tabindex="0" class="btn btn-primary" data-placement="right" role="button" data-toggle="popover"
                 data-trigger="focus" title="About"
-                data-content="Also known as Vyay Bhav through which we can reflect on foreign travel, jail, divorce, and expenditure. It represents Pisces.">House 12</a>
+                data-content="Also known as Vyay Bhav through which we can reflect on foreign travel, jail, divorce, and expenditure. It represents Pisces.">House
+                12</a>
 
         </div>
 
@@ -317,15 +343,16 @@ This house represents Aries.">House 1</a>
                     <h2 class="mb-0">
                         <button class="btn btn-link text-left" type="button" data-toggle="collapse"
                             data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            1. I don't have my birth details like date, time, and place of birth. How can I know my future?
+                            1. I don't have my birth details like date, time, and place of birth. How can I know my
+                            future?
                         </button>
                     </h2>
                 </div>
 
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                    data-parent="#accordionExample">
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
-                      Without birth details, a horoscope can't be prepared and analyzed. In such conditions,Palmistry is the only solution.
+                        Without birth details, a horoscope can't be prepared and analyzed. In such conditions,Palmistry
+                        is the only solution.
                     </div>
                 </div>
             </div>
@@ -334,13 +361,14 @@ This house represents Aries.">House 1</a>
                     <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          2.How astrology can help me?
+                            2.How astrology can help me?
                         </button>
                     </h2>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
-                        Astrology is the mirror of a person it provides information about past, present, and future. It gives the right direction at right time.
+                        Astrology is the mirror of a person it provides information about past, present, and future. It
+                        gives the right direction at right time.
                     </div>
                 </div>
             </div>
@@ -355,7 +383,7 @@ This house represents Aries.">House 1</a>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
-                      By watching the horoscope one can rightly advise the reason and solution of wealth problems.
+                        By watching the horoscope one can rightly advise the reason and solution of wealth problems.
 
                     </div>
                 </div>
@@ -365,13 +393,14 @@ This house represents Aries.">House 1</a>
                     <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        4.When I will get my own house, vehicle and how would be the health of my mother?
+                            4.When I will get my own house, vehicle and how would be the health of my mother?
                         </button>
                     </h2>
                 </div>
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                     <div class="card-body">
-                        The fourth house of a horoscope can predict that when the person will have his own house, vehicle, and health of his/her mother.
+                        The fourth house of a horoscope can predict that when the person will have his own house,
+                        vehicle, and health of his/her mother.
                     </div>
                 </div>
             </div>
@@ -380,7 +409,8 @@ This house represents Aries.">House 1</a>
                     <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        5.When I will have a baby or whether the child would be a boy or girl? What will be their education?
+                            5.When I will have a baby or whether the child would be a boy or girl? What will be their
+                            education?
                         </button>
                     </h2>
                 </div>
@@ -395,7 +425,7 @@ This house represents Aries.">House 1</a>
                     <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                      6.People ask about the health, court case, police case, loan?
+                            6.People ask about the health, court case, police case, loan?
                         </button>
                     </h2>
                 </div>
@@ -410,13 +440,14 @@ This house represents Aries.">House 1</a>
                     <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        7.People ask about marriage and business?
+                            7.People ask about marriage and business?
                         </button>
                     </h2>
                 </div>
                 <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
                     <div class="card-body">
-                      Seventh house and planetary positions can tell us when marriage would happen and how would be the business.
+                        Seventh house and planetary positions can tell us when marriage would happen and how would be
+                        the business.
                     </div>
                 </div>
             </div>
@@ -425,13 +456,15 @@ This house represents Aries.">House 1</a>
                     <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseEighth" aria-expanded="false" aria-controls="collapseEighth">
-                      8.How about the future, career, job, and earning?
+                            8.How about the future, career, job, and earning?
                         </button>
                     </h2>
                 </div>
-                <div id="collapseEighth" class="collapse" aria-labelledby="headingEighth" data-parent="#accordionExample">
+                <div id="collapseEighth" class="collapse" aria-labelledby="headingEighth"
+                    data-parent="#accordionExample">
                     <div class="card-body">
-                        By watching the planetary positions of the ninth, tenth, and eleventh houses the future, career, job, and earning can be predicted.
+                        By watching the planetary positions of the ninth, tenth, and eleventh houses the future, career,
+                        job, and earning can be predicted.
                     </div>
                 </div>
             </div>
@@ -440,13 +473,15 @@ This house represents Aries.">House 1</a>
                     <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                        9.What is Mangalik/Mangal Dosh?
+                            9.What is Mangalik/Mangal Dosh?
                         </button>
                     </h2>
                 </div>
                 <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
                     <div class="card-body">
-                        When Mars is situated in the first, second, seventh, eighth, and twelfth houses the person is called Manglik, and this Dosh is known as Mangal Dosh. That's why it's advisable to see whether a person is Manglik or not before marriage to have a suitable marriage ahead.
+                        When Mars is situated in the first, second, seventh, eighth, and twelfth houses the person is
+                        called Manglik, and this Dosh is known as Mangal Dosh. That's why it's advisable to see whether
+                        a person is Manglik or not before marriage to have a suitable marriage ahead.
                     </div>
                 </div>
             </div>
@@ -455,13 +490,15 @@ This house represents Aries.">House 1</a>
                     <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                        10.How gemstones influence our fate? How can I know which gemstone is suited for me?
+                            10.How gemstones influence our fate? How can I know which gemstone is suited for me?
                         </button>
                     </h2>
                 </div>
                 <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
                     <div class="card-body">
-                         To activate the planet certain gemstones that help the people with positive energy and help for future building. Likewise to activate the Saturn and to receive its positive results Neelam gemstone is required.
+                        To activate the planet certain gemstones that help the people with positive energy and help for
+                        future building. Likewise to activate the Saturn and to receive its positive results Neelam
+                        gemstone is required.
                     </div>
                 </div>
             </div>
@@ -483,7 +520,10 @@ This house represents Aries.">House 1</a>
                 <div class="contact-details-div-">
                     <i class="fas fa-map-marker-alt fa-2x"></i> <span>Visit Us</span>
                     <h3>Spring Green, A-803, Anaura Kala,Faizabad Road, Lucknow-226028</h3>
-		     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1779.118990670658!2d81.0806436080001!3d26.895941387858656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2970cbfd7ab%3A0x7c33a0a40dc5c337!2sSpring%20Greens!5e0!3m2!1sen!2sin!4v1610902684603!5m2!1sen!2sin" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1779.118990670658!2d81.0806436080001!3d26.895941387858656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2970cbfd7ab%3A0x7c33a0a40dc5c337!2sSpring%20Greens!5e0!3m2!1sen!2sin!4v1610902684603!5m2!1sen!2sin"
+                        width="400" height="200" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
                 </div>
                 <div class="contact-details-div">
                     <i class="far fa-envelope fa-2x"></i>
@@ -558,7 +598,7 @@ This house represents Aries.">House 1</a>
                                 <!-- loading animation on form submition -->
                                 <div class="spinner-border text-info " role="status">
                                     <span class="sr-only">Loading...</span>
-                                  </div>
+                                </div>
 
                             </div>
 
@@ -589,13 +629,15 @@ This house represents Aries.">House 1</a>
 
 
 
-      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-      <script src="jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 
 
     <!--Js for Invoking lamda Functions-->
-<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
 </body>
 
 
@@ -636,17 +678,17 @@ This house represents Aries.">House 1</a>
     const theme = document.querySelector("#theme-link");
 
 
-    btnElement.addEventListener("click",function(){
+    btnElement.addEventListener("click", function () {
 
         // If the current URL contains "ligh-theme.css"
-  if (theme.getAttribute("href") == "styles.css") {
-    // ... then switch it to "styles-dark.css"
-    theme.href = "styles-dark.css";
-  // Otherwise...
-  } else {
-    // ... switch it to "styles.css"
-    theme.href = "styles.css";
-  }
+        if (theme.getAttribute("href") == "styles.css") {
+            // ... then switch it to "styles-dark.css"
+            theme.href = "styles-dark.css";
+            // Otherwise...
+        } else {
+            // ... switch it to "styles.css"
+            theme.href = "styles.css";
+        }
     })
 
 </script>
