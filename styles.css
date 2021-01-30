@@ -1,126 +1,121 @@
-.nav-br{
+.nav-br {
     font-weight: bolder;
-
 }
 
-
-
-
 /* To remove creepy white line in right */
+
 /* Ref - > https://www.weblimitless.com/stop-website-showing-white-space-right-side/ */
-html,body
-{
+
+html, body {
     width: 100%;
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
     /* removing kindoff botton scrolling(overflowing on x-axis is hidding now ) */
-    overflow-x: hidden; 
-
+    overflow-x: hidden;
 }
+
+
 
 /* custom nabar css over bootstrap */
-.navbar{
-   max-width:100%;
 
+.navbar {
+    max-width: 100%;
     padding-left: 50px;
-    
-  
     color: aliceblue;
-
-    background: #C33764;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #C33764;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
-
-
-#title{
-    
+#title {
     min-width: 100%;
     padding-top: 150px;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
-
     /* gradient for background */
-
-    background: #C33764;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #C33764;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #title {
     color: aliceblue;
     margin-right: 0px;
 }
-#title h1{
+
+#title h1 {
     font-weight: bolder;
 }
-#title p{
 
+#title p {
     text-align: left;
     margin-bottom: 15%;
 }
 
-.title-img{
-
+.title-img {
     padding-bottom: 5%;
     text-align: center;
     width: 500px;
     animation: rotation 35s infinite linear;
     position: relative;
     left: 10%;
-
 }
 
-
-
-
-@media (max-width: 600px){
-
-    .title-img{
-        width: 200px;
-
+@media (max-width: 600px) {
+    #title {
+        min-width: 100%;
+        padding-top: 75px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        /* gradient for background */
+        background: #C33764;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #1D2671, #C33764);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       /* text-align: center; */
+    }
+    .title-img {
+        width: 100%;
+        left: 0%;
     }
 }
-
-
-
-
 
 /* Rotate image animation keyframe */
 
 @keyframes rotation {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-      transform: rotate(359deg);
+        transform: rotate(359deg);
     }
-  }
+}
 
+/* animated scroll down icon styling */
 
-
-
-  /* animated scroll down icon styling */
-
-
-  .scroll-downs {
+.scroll-downs {
     position: relative;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-    
-    width :34px;
+    width: 34px;
     height: 55px;
-  }
-  .mousey {
+}
+
+.mousey {
     width: 7px;
     padding: 10px 15px;
     height: 35px;
@@ -128,75 +123,82 @@ html,body
     border-radius: 25px;
     opacity: 0.75;
     box-sizing: content-box;
-  }
-  .scroller {
+}
+
+.scroller {
     width: 7px;
     height: 17px;
     border-radius: 25%;
     background-color: #fff;
     animation-name: scroll;
     animation-duration: 2.2s;
-    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
     animation-iteration-count: infinite;
-  }
-  @keyframes scroll {
-    0% { opacity: 0; }
-    10% { transform: translateY(0); opacity: 1; }
-    100% { transform: translateY(15px); opacity: 0;}
-  }
+}
 
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
 
-  /* Button styling */
+/* Button styling */
 
+.btn {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 
-  .btn{
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-top: 40px;
-      margin-bottom: 20px;
-  }
-
-
-
+@media(max-width: 600px) {
+    #outerbuttons {
+        width: 100%;
+        text-align: center;
+    }
+    #inner {
+        display: inline-block;
+    }
+}
 
 /* Features section styling */
 
-#features{
+#features {
     margin-top: 5%;
-
     margin-right: 0;
-
     padding-left: 3%;
     padding-right: 3%;
     padding-bottom: 5%;
     text-align: center;
 }
 
-.custom-feature{
+.custom-feature {
     margin-top: 5px;
-    margin-bottom:5px ;
+    margin-bottom: 5px;
     padding: 5%;
 }
 
-
 /* Adding Extra space between 2 row only on big screens */
-@media (min-width: 600px){
 
-    .hr-features{
+@media (min-width: 600px) {
+    .hr-features {
         margin-top: 2%;
         border: 10px dotted violet;
         border-bottom: none;
-
     }
-
-
-   
 }
-
 
 /* Features section icons */
 
-.custom-heart{
+.custom-heart {
     position: relative;
     color: black;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
@@ -205,43 +207,36 @@ html,body
     transition: top 1s ease-in-out;
 }
 
-
-
-@keyframes heart-ani{
-    from{
+@keyframes heart-ani {
+    from {
         top: 2px;
         color: black;
-
     }
-    to{
+    to {
         top: 10px;
         color: #C33764;
     }
-
 }
-
-
 
 /* Daily news section styling */
 
-@keyframes bg-animate{
-    0%{
+@keyframes bg-animate {
+    0% {
         background: rgb(231, 175, 203);
     }
-    50%{
+    50% {
         background: rgb(210, 240, 252);
     }
-    100%{
+    100% {
         background: whitesmoke;
     }
 }
 
-#daily-news{
+#daily-news {
     color: black;
     padding-top: 3%;
     padding-bottom: 5%;
     text-align: center;
-
     animation: bg-animate 15s infinite alternate-reverse;
     /* background-color: whitesmoke; */
     /* background: linear-gradient(to right, #b9beeb, #da9baf); */
@@ -249,48 +244,44 @@ html,body
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);
     background: linear-gradient(to right, #1D2671, #C33764);  */
     transition: animation;
-
 }
-#daily-news h1{
+
+#daily-news h1 {
     padding-bottom: 5%;
 }
 
-.carousel-item{
-
+.carousel-item {
     padding-left: 10%;
     padding-right: 10%;
     font-size: large;
 }
 
-hr{
-
+hr {
     border: 5px dotted snow;
     border-bottom: none;
     width: 10%;
     margin-bottom: 5%;
 }
 
-#contact-us{
+#contact-us {
     position: relative;
     z-index: 3;
     padding-top: 3%;
     padding-bottom: 5%;
-
-     background: #C33764;
-     background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+    background: #C33764;
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);
     background: linear-gradient(to right, #1D2671, #C33764);
 }
 
-#contact-us h1, #contact-us p{
+#contact-us h1, #contact-us p {
     color: aliceblue;
     text-align: center;
-
 }
 
-.contact-us-form{
+.contact-us-form {
     position: relative;
     padding: 2%;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
     height: 650px;
@@ -298,221 +289,210 @@ hr{
     background-color: aliceblue;
     border-radius: 15px;
     transition: width 1s;
-   
-
 }
 
-
-.loading-animation{
+.loading-animation {
     visibility: hidden;
-    
     text-align: center;
     box-sizing: border-box;
 }
 
 /* Hover effect only on big screens */
 
-@media (min-width: 700px){
-
-.contact-us-form:hover{
-    /* height: 630px; */
-    width: 600px;
-    
-
-
-}
+@media (min-width: 700px) {
+    .contact-us-form:hover {
+        /* height: 630px; */
+        width: 560px;
+    }
 }
 
-
-.custom-form{
-   
+.custom-form {
     position: relative;
     text-align: center;
-    
 }
 
-.contact-us-form label{
+.contact-us-form label {
     font-weight: bolder;
     font-size: 20px;
 }
 
-.copyright-footer{
+.copyright-footer {
     margin-top: 5%;
     font-weight: bold;
 }
 
-.form-row{
-    padding-top: 5%;
+.form-row {
+    padding-top: 3%;
     padding-bottom: 3%;
 }
 
-
-
 /* Contact Details styling */
-.contact-details{
+
+.contact-details {
     padding-bottom: 10%;
     padding-left: 5%;
     text-align: left;
     color: aliceblue;
 }
 
-.contact-details-div{
+.contact-details-div {
     padding-top: 10%;
 }
 
 /* custom button styling */
 
-.custom-button{
+.custom-button {
     position: relative;
-
- margin-top: 10%;
-
+    margin-top: 10%;
     width: 50%;
     border-radius: 30px;
     height: 60%;
     background-color: #C33764;
     font-weight: bolder;
     color: aliceblue;
-    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #1D2671, #C33764);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
     z-index: 1;
     outline: none;
     outline-style: none;
     border: none;
 }
-.custom-button:focus{
+
+.custom-button:focus {
     outline-style: none;
 }
-.custom-button:active{
+
+.custom-button:active {
     outline-style: hidden;
     outline: none;
     border: none;
 }
-.custom-button::before:active{
+
+.custom-button::before:active {
     outline-style: hidden;
     outline: none;
     border: none;
 }
-.custom-button::before{
+
+.custom-button::before {
     outline-style: none;
     outline: none;
     border: none;
     border-radius: 30px;
     position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(to left, #1D2671, #C33764);
-  z-index: -1;
-  transition: opacity .5s linear;
-  opacity: 0;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, #1D2671, #C33764);
+    z-index: -1;
+    transition: opacity .5s linear;
+    opacity: 0;
 }
 
 .custom-button:hover::before {
     opacity: 1;
-  }
-
-
-
-
-
-
+}
 
 /* Form styling for mobile devices */
-@media (max-width: 600px){
-    .form-control{
 
+@media (max-width: 600px) {
+    .form-control {
         width: 60%;
     }
-
-    .contact-us-form{
-        height: 75vh;
+    .contact-us-form {
+        height: 80vh;
     }
-    .custom-form{
-
+    .custom-form {
         text-align: left;
     }
-
-    .custom-button{
-       
+    .custom-button {
         position: relative;
-
-     margin-top: 2%;
+        margin-top: 2%;
         height: 130%;
         width: 90%;
     }
-
-    .contact-us-form{
-
+    .contact-us-form {
         width: 300px;
     }
-
-    .form-row{
+    .form-row {
         margin-left: 5%;
     }
-
-    .form-control{
+    .form-control {
         width: 85%;
     }
-
-
 }
-
-
 
 /* 12 Houses styling */
 
-
-
-#particles-js{
+#particles-js {
     height: 100%;
     width: 100%;
     background-color: #111a68;
-
     position: absolute;
 }
 
-.astrology-data{
+.astrology-data {
     color: aliceblue;
     text-align: center;
     padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding-bottom: 5%;
-
     position: relative;
     z-index: 2;
 }
 
-@media (max-width:450px){
-    #particles-js{
+@media (max-width:450px) {
+    #particles-js {
         height: 228vh;
     }
 }
 
 /* FAQ section */
-#faq-section{
-     position: relative;
+
+#faq-section {
+    position: relative;
     z-index: 3;
     padding-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 5%;
-background-color: rgb(235, 230, 230);
+    background-color: rgb(235, 230, 230);
 }
 
-.card-header{
+.card-header {
     padding: 0%;
-
 }
 
-#faq-section h1{
+#faq-section h1 {
     color: black;
 }
 
+.btn-faq:active, .btn-faq:focus{
+    outline: none !important;
+    box-shadow: none;
+}
+
+
+
+
+/* Response text styling */
+
 .response-text {
-    padding: 2rem 1.5rem;
+    margin-bottom: 20px;
+    padding: 1rem 1.5rem;
     text-align: center;
-  }
+}
+
+#form-time {
+    visibility: hidden;
+}
+
+#form-response {
+    padding-bottom: 2%;
+    font-weight: bolder;
+    font-size: medium;
+}
