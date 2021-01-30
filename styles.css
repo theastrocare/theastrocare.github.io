@@ -19,6 +19,8 @@ html,body
 
 }
 
+
+
 /* custom nabar css over bootstrap */
 .navbar{
    max-width:100%;
@@ -33,6 +35,7 @@ html,body
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
+
 
 
 
@@ -478,8 +481,8 @@ hr{
     color: aliceblue;
     text-align: center;
     padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding-bottom: 5%;
 
     position: relative;
@@ -512,8 +515,19 @@ background-color: rgb(235, 230, 230);
     color: black;
 }
 
+.btn-faq:active, .btn-faq:focus{
+    outline: none !important;
+    box-shadow: none;
+}
+
+
+
+
+/* Response text styling */
+
 .response-text {
-    padding: 2rem 1.5rem;
+    margin-bottom: 20px;
+    padding: 1rem 1.5rem;
     text-align: center;
   }
 
