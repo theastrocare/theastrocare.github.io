@@ -15,7 +15,12 @@ html, body {
     overflow-x: hidden;
 }
 
-
+.img-responsive-brand {
+    height: auto;
+    width: auto;
+    max-height: 50px;
+    max-width: 250px;
+}
 
 /* custom nabar css over bootstrap */
 
