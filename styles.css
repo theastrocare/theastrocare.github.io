@@ -273,6 +273,18 @@ hr {
     background: linear-gradient(to right, #1D2671, #C33764);
 }
 
+@media (max-width: 600px) {
+
+    #VisitUs {
+        font-size: x-large;
+        padding-left: 2%;
+    }
+   
+    #bookAppointment {
+        font-size: x-large;
+        padding-bottom: 5%;
+    }
+}
 #contact-us h1, #contact-us p {
     color: aliceblue;
     text-align: center;
@@ -467,9 +479,12 @@ hr {
     padding: 0%;
 }
 
-#faq-section h1 {
+#faq-section h3 {
+    padding-bottom: 5%;
+    text-align: center;
     color: black;
 }
+
 
 .btn-faq:active, .btn-faq:focus{
     outline: none !important;
