@@ -463,6 +463,13 @@ hr {
     background-color: rgb(235, 230, 230);
 }
 
+
+@media(max-width : 600px){
+    .custom-faq{
+       padding-right: 15px; 
+    }
+}
+
 .card-header {
     padding: 0%;
 }
