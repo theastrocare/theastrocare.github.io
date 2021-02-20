@@ -15,7 +15,12 @@ html, body {
     overflow-x: hidden;
 }
 
-
+.img-responsive-brand {
+    height: auto;
+    width: auto;
+    max-height: 50px;
+    max-width: 250px;
+}
 
 /* custom nabar css over bootstrap */
 
@@ -273,6 +278,18 @@ hr {
     background: linear-gradient(to right, #1D2671, #C33764);
 }
 
+@media (max-width: 600px) {
+
+    #VisitUs {
+        font-size: x-large;
+        padding-left: 2%;
+    }
+   
+    #bookAppointment {
+        font-size: x-large;
+        padding-bottom: 5%;
+    }
+}
 #contact-us h1, #contact-us p {
     color: aliceblue;
     text-align: center;
@@ -463,13 +480,23 @@ hr {
     background-color: rgb(235, 230, 230);
 }
 
+
+@media(max-width : 600px){
+    .custom-faq{
+       padding-right: 15px; 
+    }
+}
+
 .card-header {
     padding: 0%;
 }
 
-#faq-section h1 {
+#faq-section h3 {
+    padding-bottom: 5%;
+    text-align: center;
     color: black;
 }
+
 
 .btn-faq:active, .btn-faq:focus{
     outline: none !important;
