@@ -16,6 +16,8 @@ html, body {
 }
 
 .img-responsive-brand {
+    margin-left:  3vw;
+    border-radius: 50px;
     height: auto;
     width: auto;
     max-height: 50px;
