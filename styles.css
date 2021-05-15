@@ -307,8 +307,8 @@ hr {
     margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
-    height: 650px;
-    width: 500px;
+    height: 700px;
+    width: 530px;
     background-color: aliceblue;
     border-radius: 15px;
     transition: width 1s;
@@ -325,7 +325,7 @@ hr {
 @media (min-width: 700px) {
     .contact-us-form:hover {
         /* height: 630px; */
-        width: 560px;
+        width: 540px;
     }
 }
 
@@ -422,12 +422,10 @@ hr {
 /* Form styling for mobile devices */
 
 @media (max-width: 600px) {
-    .form-control {
-        width: 60%;
-    }
-    .contact-us-form {
-        height: 80vh;
-    }
+
+    /* .contact-us-form {
+        height: 92vh;
+    } */
     .custom-form {
         text-align: left;
     }

@@ -314,21 +314,19 @@ hr{
 }
 
 
-.contact-us-form{
+
+.contact-us-form {
     position: relative;
     padding: 2%;
     margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
-    height: 650px;
-    width: 500px;
+    height: 700px;
+    width: 530px;
     background-color: aliceblue;
     border-radius: 15px;
     transition: width 1s;
-   
-
 }
-
 
 .loading-animation{
     visibility: hidden;
@@ -339,16 +337,13 @@ hr{
 
 /* Hover effect only on big screens */
 
-@media (min-width: 700px){
-
-    .contact-us-form:hover{
+@media (min-width: 700px) {
+    .contact-us-form:hover {
         /* height: 630px; */
-        width: 560px;
-    
-
-
+        width: 540px;
+    }
 }
-}
+
 
 .custom-form{
    
@@ -447,43 +442,29 @@ hr{
 
 
 /* Form styling for mobile devices */
-@media (max-width: 600px){
-    .form-control{
+@media (max-width: 600px) {
 
-        width: 60%;
-    }
-
-    .contact-us-form{
-        height: 75vh;
-    }
-    .custom-form{
-
+    /* .contact-us-form {
+        height: 92vh;
+    } */
+    .custom-form {
         text-align: left;
     }
-
-    .custom-button{
-       
+    .custom-button {
         position: relative;
-
-     margin-top: 2%;
+        margin-top: 2%;
         height: 130%;
         width: 90%;
     }
-
-    .contact-us-form{
-
+    .contact-us-form {
         width: 300px;
     }
-
-    .form-row{
+    .form-row {
         margin-left: 5%;
     }
-
-    .form-control{
+    .form-control {
         width: 85%;
     }
-
-
 }
 
 
