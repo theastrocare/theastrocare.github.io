@@ -23,7 +23,7 @@ html,body
 .navbar{
    max-width:100%;
 
-    padding-left: 50px;
+   padding-left: 25px;
     
   
     background: #41295a;  /* fallback for old browsers */
@@ -32,6 +32,10 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
 
 }
 
+
+.navbar-theme-toggle{
+    margin-left: 7vw;
+}
 
 
 #title{
@@ -66,6 +70,8 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
 }
 
 .img-responsive-brand {
+    margin-left:  5px !important;
+    border-radius: 50px;
     height: auto;
     width: auto;
     max-height: 50px;
@@ -88,9 +94,9 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
 
 @media (max-width: 600px){
 
-    .title-img{
-        width: 200px;
-
+     .title-img {
+        width: 100%;
+        left: 0%;
     }
 }
 
@@ -162,6 +168,15 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
       margin-bottom: 20px;
   }
 
+  @media(max-width: 600px) {
+    #outerbuttons {
+        width: 100%;
+        text-align: center;
+    }
+    #inner {
+        display: inline-block;
+    }
+}
 
 
 
@@ -507,23 +522,36 @@ hr{
 #faq-section{
      position: relative;
     z-index: 3;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
+    padding-top: 5% ;
+    padding-left: 2% ;
+    padding-right: 5% ;
+    padding-bottom: 5% ;
     background: #41295a;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
 
+
+
+@media(max-width : 600px){
+
+    .custom-faq{
+     width: 95vw !important;
+      
+    }
+}
+
+
 .card-header{
     padding: 0%;
 
 }
 
-#faq-section h1{
+#faq-section > h3{
     color: aliceblue;
+    padding-bottom: 5%;
+    text-align: center;
 }
 
 
@@ -557,3 +585,13 @@ hr{
     font-weight: bolder;
     font-size: medium;
 }
+
+
+.giphy{
+    border-radius: 25px;
+    height:200px;
+    width:200px;
+    box-shadow: 3px 3px 2px grey;
+    margin-bottom:5px;
+  }
+  

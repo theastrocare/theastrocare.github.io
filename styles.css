@@ -16,6 +16,8 @@ html, body {
 }
 
 .img-responsive-brand {
+    margin-left:  5px !important;
+    border-radius: 50px;
     height: auto;
     width: auto;
     max-height: 50px;
@@ -26,7 +28,7 @@ html, body {
 
 .navbar {
     max-width: 100%;
-    padding-left: 50px;
+    padding-left: 25px;
     color: aliceblue;
     background: #C33764;
     /* fallback for old browsers */
@@ -36,6 +38,10 @@ html, body {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
+.navbar-theme-toggle{
+    margin-left: 7vw;
+}
 #title {
     min-width: 100%;
     padding-top: 150px;
@@ -473,17 +479,21 @@ hr {
 #faq-section {
     position: relative;
     z-index: 3;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
+    padding-top: 5% ;
+    padding-left: 2% ;
+    padding-right: 5% ;
+    padding-bottom: 5% ;
     background-color: rgb(235, 230, 230);
 }
 
 
+
+
 @media(max-width : 600px){
+
     .custom-faq{
-       padding-right: 15px;
+     width: 95vw !important;
+      
     }
 }
 
