@@ -793,9 +793,11 @@ This house represents Aries.">House 1</a>
         fetch(scriptURL, { method: 'POST', body: fData })
             .then(document.getElementById("loading-id").style.opacity = 0)
 
+
+            //Below is the new code for banner after data submitted.
             .then(document.getElementById("form-response").style.opacity = 1)
             .then(
-                // document.getElementById("my-form").reset()
+                //Banner hide again after 3 sec
                 setTimeout(() => {
                     document.getElementById("form-response").style.opacity = 0
 
