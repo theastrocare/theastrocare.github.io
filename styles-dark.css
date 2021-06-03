@@ -561,10 +561,16 @@ hr{
 }
 
 
-#form-response{
-    padding-bottom: 2%;
-    font-weight: bolder;
+#form-response {
+    opacity: 0;
+    padding-bottom: 1%;
+    font-weight: 600;
     font-size: medium;
+    border-radius: 15px;
+    background-color: rgb(158, 217, 235);
+    margin-bottom: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 

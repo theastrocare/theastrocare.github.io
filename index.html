@@ -588,7 +588,7 @@ This house represents Aries.">House 1</a>
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div id="mainForm" class="contact-us-form">
 
-                    <form class="custom-form" name="google-sheet">
+                    <form id="my-form" class="custom-form" name="google-sheet">
 
                         <!-- Email in form optional -->
                         <!-- <div class="form-row">
@@ -678,7 +678,8 @@ This house represents Aries.">House 1</a>
                         <input type="time" name="SubmitTime" class="form-control" id="form-time" value="lol">
 
                     </form>
-                    <div id="form-response" class="response-text"></div>
+                    <div id="form-response" class="response-text">Thanks for Contacting us..! We Will Contact You
+                        Soon...</div>
                 </div>
             </div>
         </div>
@@ -791,7 +792,17 @@ This house represents Aries.">House 1</a>
 
         fetch(scriptURL, { method: 'POST', body: fData })
             .then(document.getElementById("loading-id").style.opacity = 0)
-            .then(document.getElementById("form-response").innerHTML = "Thanks for Contacting us..! We Will Contact You Soon...")
+            .then(document.getElementById("form-response").style.opacity = 1)
+            .then(
+                // document.getElementById("my-form").reset()
+                setTimeout(() => {
+                    document.getElementById("form-response").style.opacity = 0
+
+                }, 3000))
+            .then(
+                document.getElementById("my-form").reset()
+            )
+            // .then(document.getElementById("form-response").innerHTML = "Thanks for Contacting us..! We Will Contact You Soon...")
 
             // .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
 
