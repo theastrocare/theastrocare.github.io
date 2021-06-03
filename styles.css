@@ -307,7 +307,7 @@ hr {
     margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
-    height: 700px;
+    height: 750px;
     width: 530px;
     background-color: aliceblue;
     border-radius: 15px;
@@ -491,7 +491,7 @@ hr {
 
     .custom-faq{
      width: 95vw !important;
-      
+
     }
 }
 

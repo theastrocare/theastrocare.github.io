@@ -15,7 +15,7 @@ html,body
     padding: 0px;
     scroll-behavior: smooth;
     /* removing kindoff botton scrolling(overflowing on x-axis is hidding now ) */
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 /* custom nabar css over bootstrap */
@@ -24,8 +24,8 @@ html,body
    max-width:100%;
 
    padding-left: 25px;
-    
-  
+
+
     background: #41295a;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -39,7 +39,7 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
 
 
 #title{
-    
+
     min-width: 100%;
     padding-top: 150px;
     padding-left: 5%;
@@ -48,7 +48,7 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
 
     /* gradient for background */
 
- 
+
     background: #41295a;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -128,7 +128,7 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
     bottom: 0;
     left: 0;
     margin: auto;
-    
+
     width :34px;
     height: 55px;
   }
@@ -183,7 +183,7 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
 /* Features section styling */
 
 #features{
-   
+
     background: #41295a;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2F0743, #41295a) ;
@@ -214,7 +214,7 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
     }
 
 
-   
+
 }
 
 
@@ -303,8 +303,8 @@ hr{
     background: #360033;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    
+
+
 }
 
 #contact-us h1, #contact-us p{
@@ -321,7 +321,7 @@ hr{
     margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
-    height: 700px;
+    height: 750px;
     width: 530px;
     background-color: aliceblue;
     border-radius: 15px;
@@ -330,7 +330,7 @@ hr{
 
 .loading-animation{
     visibility: hidden;
-    
+
     text-align: center;
     box-sizing: border-box;
 }
@@ -346,10 +346,10 @@ hr{
 
 
 .custom-form{
-   
+
     position: relative;
     text-align: center;
-    
+
 }
 
 .contact-us-form label{
@@ -510,7 +510,7 @@ hr{
     background: #41295a;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+
 }
 
 
@@ -519,7 +519,7 @@ hr{
 
     .custom-faq{
      width: 95vw !important;
-      
+
     }
 }
 
@@ -554,7 +554,7 @@ hr{
   }
 
 
-  
+
 
   #form-time{
     visibility: hidden;
@@ -581,4 +581,3 @@ hr{
     box-shadow: 3px 3px 2px grey;
     margin-bottom:5px;
   }
-  
