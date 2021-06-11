@@ -5,9 +5,9 @@
 Freelancing project to Develop Landing page website for an Astrologer.
 
 Main Team Members : 
-Divesh 
-Sahil
-Ananaya
+Divesh Keshwani
+Sahil Gulati
+Ananaya Purkeyastha
 
 Technologies used in making this website as of now: 
 1. HTML
@@ -20,10 +20,7 @@ Technologies used in making this website as of now:
 
 
 
-Direct link to website :  https://diveshkswn.github.io/horscope-landing/
+Direct link to website :  www.thastrocare.com
 
-
-Landing page : 
-![alt](https://diveshkswn.github.io/horscope-landing/)
 
 
